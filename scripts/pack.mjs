@@ -2,7 +2,7 @@
  * Zip `dist/` for sideload installs. Output: `launchpost-extension.zip` in the repo root.
  */
 import { execFileSync } from "node:child_process";
-import { existsSync, mkdirSync, rmSync } from "node:fs";
+import { existsSync, rmSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
