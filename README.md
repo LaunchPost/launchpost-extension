@@ -4,6 +4,8 @@ Open-source browser extension for [launchpost.fun](https://launchpost.fun). Depl
 
 **Install (no Chrome Web Store):** [launchpost.fun/extension](https://launchpost.fun/extension)
 
+**Publisher:** [github.com/LaunchPost](https://github.com/LaunchPost)
+
 ## Load unpacked
 
 1. Download the zip from the site, **or** build from this repo (`pnpm install && pnpm build` → use the `dist/` folder).
@@ -27,7 +29,7 @@ Requires Node 20+ and pnpm 9.
 ## What’s in here
 
 - `src/` — extension (content script on x.com, background, `/connect` bridge)
-- `packages/core` — shared ticker/parse helpers (vendored from the private launchpost monorepo)
+- `packages/core` — shared ticker/parse helpers
 
 ## Permissions
 
@@ -35,7 +37,3 @@ Requires Node 20+ and pnpm 9.
 - `launchpost.fun` — session handoff and Deploy API
 
 No wallet keys, no seed phrases, nothing posted on your behalf.
-
-## License
-
-Source is published so you can inspect and build it. The launchpost product and brand remain with StratsTeam.
