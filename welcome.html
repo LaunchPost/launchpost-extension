@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>launchpost</title>
+    <style>
+      :root { color-scheme: dark; }
+      body { margin: 0; min-height: 100vh; background: #0b0d10; color: #eef1f4; font-family: Inter, Segoe UI, Arial, sans-serif; display: grid; place-items: center; }
+      main { max-width: 520px; padding: 32px 24px; }
+      .mark { width: 36px; height: 36px; border-radius: 10px; background: #00c805; color: #06120a; font-weight: 800; display: grid; place-items: center; font-size: 18px; }
+      h1 { font-size: 32px; letter-spacing: -0.04em; margin: 16px 0 8px; }
+      h1 b { color: #00c805; }
+      p { color: #98a2ad; line-height: 1.5; }
+      ol { padding-left: 18px; line-height: 1.6; }
+      a { color: #00c805; }
+      .note { margin-top: 20px; padding: 12px 14px; border: 1px solid #232830; border-radius: 12px; color: #8b95a1; font-size: 14px; }
+      .actions { display: flex; gap: 12px; align-items: center; margin-top: 24px; }
+      .go { display: inline-block; padding: 12px 22px; border-radius: 999px; background: #00c805; color: #06120a; font-weight: 700; text-decoration: none; font-size: 15px; }
+      .go:hover { background: #17d61b; }
+      .close { background: none; border: 0; color: #98a2ad; font: inherit; font-size: 14px; cursor: pointer; text-decoration: underline; }
+      .close:hover { color: #eef1f4; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="mark">$</div>
+      <h1>launch<b>post</b> on X</h1>
+      <p>A Launch button now sits on posts. Fill ticker, pair, lock or gift — then reply. You press Post.</p>
+      <ol>
+        <li>Open x.com. Every post has <b style="color:#00c805">Launch</b>.</li>
+        <li>We suggest the command from the post. Change anything.</li>
+        <li>Reply on X. The bot launches the coin.</li>
+      </ol>
+      <p class="note">We never post for you. We never read your DMs. The extension only reads the post you're looking at.</p>
+      <p>On your phone or another browser: <a href="https://launchpost.fun/compose" target="_blank" rel="noreferrer">launchpost.fun/compose</a> does the same from a post link.</p>
+      <div class="actions">
+        <a class="go" href="https://x.com/home">Open X</a>
+        <button class="close" type="button" id="close">Close this tab</button>
+      </div>
+    </main>
+    <script type="module" src="./src/welcome.ts"></script>
+  </body>
+</html>

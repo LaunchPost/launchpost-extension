@@ -1,0 +1,21 @@
+{
+  "name": "launchpost-extension",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Launch a coin from any post on X. Open source Chrome/Brave/Edge extension for launchpost.fun.",
+  "type": "module",
+  "packageManager": "pnpm@9.7.0",
+  "scripts": {
+    "build": "vite build && vite build --config vite.content.config.ts && vite build --config vite.bridge.config.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "pack": "node ./scripts/pack.mjs"
+  },
+  "dependencies": {
+    "@launchpost/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.1",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.5"
+  }
+}
